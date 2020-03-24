@@ -26,3 +26,12 @@ O uso das credenciais facilitam o envios para o repositório sem necesidade de d
 ```
 git config --global credential.helper 'store'
 ```
+
+> #### Branch
+O comando branch permite realizar uma séri de tarefas com as branchs, como: criar, remover, listar, etc.
+- Listar as branchs locais (A branch selecionada fica em destaque)
+- -a para listar todas branchs locais e remotas
+- -r para listar todas branchs remotas
+```
+git branch 
+```
