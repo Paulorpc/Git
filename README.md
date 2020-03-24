@@ -13,6 +13,7 @@ git commit -m 'comentário do commit'
 git push origin [branch]
 ```
 
+
 > #### Clone
 O clone permite fazer uam cópia do projeto GIT para o sistema local. 
 ```
