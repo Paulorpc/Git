@@ -13,6 +13,13 @@ git commit -m 'comentário do commit'
 git push origin [branch]
 ```
 
+> #### Clone
+O clone permite fazer uam cópia do projeto GIT para o sistema local. 
+```
+git clone https://github.com/Paulorpc/Git
+```
+
+
 > #### Utilizando credenciais
 O uso das credenciais facilitam o envios para o repositório sem necesidade de digitar usuário/senha. Os dados ficam armazenados em arquivo no disco. Portanto para uma opção mais segura, utilizar o SSH. 
 ```
