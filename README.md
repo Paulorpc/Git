@@ -38,9 +38,10 @@ git branch
 
 
 > #### Checkout
-O comando checkout permite inicializar em uma brach qualquer. Por exemplo: Trocar entre branch master e develop. Ou caso um desenvolvedor inicie uma branch para trabalho e em seguida você precisa dar continuidade na branch dele. 
+O comando checkout permite inicializar em uma brach qualquer. Por exemplo: Trocar entre branch master e develop. Ou caso um desenvolvedor inicie uma branch para trabalho e em seguida você precisa dar continuidade na branch dele.
+- -b cria uma nova branch e faz o checkout nela. 
 ```
-git checkou [branch]
+git checkout [-b] [branch]
 ```
 
 > #### Merge
@@ -52,3 +53,6 @@ git checkout master
 git merge feature/nova_funcao
 git push
 ```
+
+
+
