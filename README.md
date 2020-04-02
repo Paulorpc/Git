@@ -35,3 +35,20 @@ O comando branch permite realizar uma séri de tarefas com as branchs, como: cri
 ```
 git branch 
 ```
+
+
+> #### Checkout
+O comando checkout permite inicializar em uma brach qualquer. Por exemplo: Trocar entre branch master e develop. Ou caso um desenvolvedor inicie uma branch para trabalho e em seguida você precisa dar continuidade na branch dele. 
+```
+git checkou [branch]
+```
+
+> #### Merge
+O comando merge faz a "junção" de duas branchs. Por exemplo: O dev trabalhou numa nova feature e quer atualizar a branch master com as mudanças dessa feature.
+- Antes é necessário fazer checkout na branch que receberá as modificações, ou seja, que será atualizada.
+- Depois é preciso fazer o envio para o repositório remoto.   
+```
+git checkout master
+git merge feature/nova_funcao
+git push
+```
