@@ -54,4 +54,5 @@ git merge feature/nova_funcao
 git push
 ```
 
+branch B
 
