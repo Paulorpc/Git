@@ -54,6 +54,11 @@ git merge feature/nova_funcao
 git push
 ```
 
-branch A
-branch B
+> #### Rebase
+O comando rebase atualiza a branch atual com as modificações mergeadas na branch de origem, mantendo o histórico corretamente. Por exemplo: O dev1 (branch A) e o dev2 (branch B) criaram novas branchs a partir da branch develop. O dev1 finalizou seu trbalho e fez o merge na branch develop, enquanto o dev2 seguiu trabalhando na branch B. Quando o dev2 for fazer o merge na develop, poderá acontecer um conflito, pois a branch develop pode ter alterações nos mesmos arquivos que o dev2 estava trabalhando (um exemplo). Neste caso, pode ser utilizado o rebase na branchB da branch develop, atualizando a branch develop para o estado atual e permitindo que o dev2 resolva os conflitos existentes. Esse mesmo procedimento poderia ser feito com merges, porém o histórico não fica correto.    
+```
+git checkout [branch feature]
+git rebase [branch origem feature]
+git push
+```
 
