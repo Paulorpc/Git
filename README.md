@@ -62,3 +62,12 @@ git rebase [branch origem feature]
 git push
 ```
 
+> #### Reset
+O comando reset permite reverter as mudanças realizadas numa branch.    
+Obs: Comando bastante útil, mas deve ser usado com cautela, pois ele irá eliminar determinados commits e após subir para o github, não tem como restaurar. Apesar de desfazer determinados commits, ele não apaga as alterações dos arquivos ao qual fez o pull, logo é possível subir um novo commit com as alterações local.
+- Talvez seja necessário fazer um push forçado, pois o github poderá estar apontando pra um commit posterior ao seu atual e irá pedir para fazer um pull.
+- A opção HEAD permite voltar n commits atrás   
+```
+git reset [hash_destino] OU git reset HEAD~3
+git push -f 
+```
