@@ -1,7 +1,7 @@
 # Git
 Projeto de testes para aprendizado GIT.
 
-Este projeto não possui nenhum conteúdo relevante além deste readme, uma vez que foi criado com a finalidade de auxiliar na aprendizagem mais aprofundada do git, utilizando um fluxo de trabalho mais elaborado, como o sugerido pelo gitflows, por exemplo. 
+Este projeto não possui nenhum conteúdo relevante além deste readme, já que foi criado com a finalidade de auxiliar na aprendizagem aprofundada do git, utilizando um fluxo de trabalho mais elaborado utilizados por grandes equipes.  
 Neste arquivo é apresentado os principais comandos do git, suas descrições, opções e exemplos.  
 
 #### Comandos Git básicos:
