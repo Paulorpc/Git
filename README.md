@@ -6,13 +6,13 @@ Projeto de testes para aprendizado GIT.
 ### Comandos Git básicos:
 ```shell
 $ git init
-$ git clone [link_projeto]
-$ git remote add origin [link_projeto]
+$ git clone <link_projeto>
+$ git remote add origin <link_projeto>
 $ git status
-$ git pull origin [nome_branch]
+$ git pull origin <nome_branch>
 $ git add .
 $ git commit -m 'comentário'
-$ git push origin [nome_branch]
+$ git push origin <nome_branch>
 ```
 
 ---
@@ -32,7 +32,7 @@ $ git init
 O clone permite fazer uma cópia de um projeto de um repositório GIT existente para o sistema local.
 
 ```shell
-$ git clone url_projeto
+$ git clone <url_projeto>
 ```
 
 ---
@@ -52,9 +52,9 @@ O comando add permite adicionar um ou mais arquivos para a área de preparação
 **Observação:** é possível add um único arquivo através de seu nome, adicionar todos arquivos alterados utilizando '.', adicionar todos arquivos de uma pasta, entre outras variações.   
 
 ```shell
-$ git add nome_arquivo
-$ git add .
-$ git add /pasta
+$ git add <nome_arquivo>
+$ git add <.>
+$ git add </pasta>
 ```
 
 ---
@@ -74,11 +74,9 @@ $ git commit -m 'breve descrição da alteração realizada'
 
 #### Remote
 O comando remote permite conectar o repositório local ao repositório remoto (servidor)
- 
->**[add]** vincula o url do repositório remoto a uma variável.
-  
+   
 ```shell
-$ git remote [add nome_variável url_remoto]
+$ git remote add <nome_variável> <url_remoto>
 $ git remote add origin https://github.com/Paulorpc/Git.git 
 ```
 
@@ -127,7 +125,7 @@ O comando checkout permite inicializar em uma brach já existente ou criar e sel
 >**[-b]** cria uma nova branch e faz o checkout nela.
  
 ```shell
-$ git checkout [-b] nome_branch
+$ git checkout [-b] <nome_branch>
 ```
 
 ---
@@ -140,8 +138,8 @@ O comando merge combina (faz a "junção") de duas branchs.
 **Observação:** Antes é necessário fazer checkout na branch que receberá as modificações, ou seja, que será atualizada.   
 
 ```shell
-$ git checkout nome_branch
-$ git merge feature/nova_funcao
+$ git checkout <nome_branch>
+$ git merge <feature/nova_funcao>
 ```
 
 ---
@@ -154,8 +152,8 @@ O comando rebase atualiza a branch atual com as modificações mergeadas na bran
 **Observação:** para fazer o rebase, deve-se estar na branch que será atualizada.    
 
 ```shell
-$ git checkout branch_feature
-$ git rebase branch_origem
+$ git checkout <branch_feature>
+$ git rebase <branch_origem>
 ```
 
 ---
@@ -170,7 +168,7 @@ O comando reset permite reverter as mudanças realizadas numa branch, eliminando
 >**[HEAD]** permite voltar n commits atrás.
    
 ```shell
-$ git reset hash_destino 
+$ git reset <hash_destino> 
 $ git push -f 
 ```
 ou
