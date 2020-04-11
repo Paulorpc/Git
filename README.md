@@ -1,5 +1,7 @@
 # Git
-Projeto de testes para aprendizado GIT. Neste arquivo é apresentado os principais comandos git,sua descrição, opções e exemplos.  
+Projeto de testes para aprendizado GIT.
+
+Neste arquivo é apresentado os principais comandos git, sua descrição, opções e exemplos.  
 
 #### Comandos Git básicos:
 
