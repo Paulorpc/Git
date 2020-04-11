@@ -11,8 +11,8 @@ Neste arquivo é apresentado os principais comandos do git, suas descrições, o
 $ git init
 $ git clone <link_projeto>
 $ git remote add origin <link_projeto>
-$ git status
 $ git pull origin <nome_branch>
+$ git status
 $ git add .
 $ git commit -m 'comentário'
 $ git push origin <nome_branch>
