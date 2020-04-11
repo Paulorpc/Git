@@ -1,9 +1,7 @@
 # Git
-Projeto de testes para aprendizado GIT. 
+Este projeto é apenas um testes para aprendizado GIT. Neste arquivo é apresentado os principais comandos git,sua descrição, opções e exemplos.  
 
-## Comandos GIT mais utilizados
-
-### Comandos Git básicos:
+## Comandos Git básicos:
 ```shell
 $ git init
 $ git clone <link_projeto>
