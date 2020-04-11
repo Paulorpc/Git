@@ -64,7 +64,7 @@ O comando commit permite tornar permanentes um conjunto de alterações.
 
 **Exemplo:** O dev realizou as alterações que precisava em um determinado arquivo. Para finalizar essa alteração, informando o sistema que aquilo é uma alteração permanente, deve-se realizar o commit.
 
->**[m]** faz um comando rápido já com o comentário da(s) alteração(ões).
+>**[-m]** faz um comando rápido já com o comentário da(s) alteração(ões).
 
 ```shell
 $ git commit -m 'breve descrição da alteração realizada' 
@@ -109,9 +109,9 @@ O comando branch permite realizar uma série de tarefas com as branchs, como: cr
 
 **Observação:** o comando git branch (sem comandos opcionais) lista as branchs locais. A branch selecionada sempre fica em destaque.
 
->**[-a]** lista todas as branchs (locais e remotas).
->**[-r]** lista todas as branchs remotas.
->**[nova_branch]** cria uma nova branch.
+>**[-a]** lista todas as branchs (locais e remotas).  
+**[-r]** lista todas as branchs remotas.  
+**[nova_branch]** cria uma nova branch.
 
 ```shell
 $ git branch
@@ -187,10 +187,13 @@ O comando stash permite criar uma pilha com cópias do seu código para uso futu
 
 **Observação:** necessário fazer o add antes de adicionar um novo estado para a pilha.
 
->**[pop]** restaura o último stash adicionado na pilha.
->**[list]** lista todos os stashs aplicados.         
+>**[pop]** restaura o último stash adicionado na pilha.  
+**[list]** lista todos os stashs aplicados.         
 
 ```shell
 $ git add .
-$ git stash 
+$ git stash
+
+$ git stash list
+$ git stash pop
 ```
