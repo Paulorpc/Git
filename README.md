@@ -3,7 +3,7 @@ Projeto de testes para aprendizado GIT.
 
 ## Comandos GIT mais utilizados
 
-> Comandos Git básicos:
+### Comandos Git básicos:
 ```shell
 $ git init
 $ git clone [link_projeto]
