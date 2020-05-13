@@ -169,7 +169,7 @@ O comando reset permite reverter as mudanças realizadas numa branch, eliminando
 - Talvez seja necessário fazer um push forçado, pois o repositório remoto poderá estar apontando pra um commit posterior ao seu atual e irá solicitar um pull, o que não seria o desejado neste caso.
 
 >**[HEAD]** permite voltar n commits atrás.  
-**[--har origin/master]** permite ignorar todas alterações locais e retornar ao último ponto de commit do git. Claro, que neste caso irá perder as alterações locais. 
+**[hard origin/master]** permite ignorar todas alterações locais e retornar ao último ponto de commit do git.
    
 ```shell
 $ git reset <hash_destino> 
@@ -182,6 +182,7 @@ $ git reset HEAD~3
 $ git push -f
 ```
 
+Neste caso é redefinido o índice e a árvore de trabalho, ou seja, quaisquer alterações nos arquivos na árvore de trabalho serão descartados.
 ```shell
 $ git reset --hard origin/master
 $ git pull origin master
