@@ -182,7 +182,7 @@ $ git reset HEAD~3
 $ git push -f
 ```
 
-Neste caso é redefinido o índice e a árvore de trabalho, ou seja, quaisquer alterações nos arquivos na árvore de trabalho serão descartados.
+no caso abaixo é redefinido o índice e a árvore de trabalho, ou seja, quaisquer alterações nos arquivos na árvore de trabalho serão descartados.
 ```shell
 $ git reset --hard origin/master
 $ git pull origin master
