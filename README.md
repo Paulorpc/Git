@@ -143,9 +143,9 @@ O comando TAG permite realizar ações relacionadas as tAGs. TAgs são referênc
 git tag -li <"*tag_pattern*">
 ```
 
->**[fetch --tags]** atualização de TAGs locais com base em tags remotas
->**[--f]** Força atualização das TAGs
->**[--prune-tags]** irá remover tags locais que não existam no remote
+**`fetch --tags`** atualização de TAGs locais com base em tags remotas  
+**`--f`** Força atualização das TAGs  
+**`--prune-tags`** irá remover tags locais que não existam no remote  
 ```shell
 git fetch --tags <--prune-tags> -f
 ```
