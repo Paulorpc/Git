@@ -134,8 +134,9 @@ $ git checkout [-b] <nome_branch>
 ---
 
 #### TAG
-O comando TAG permite realizar ações relacionadas as tAGs criadas. TAgs são referências a commits específicos. 
-`**-l | --list**` Lista todas tags. Pode ser seguida por uma padrão de busca. 
+O comando TAG permite realizar ações relacionadas as tAGs criadas. TAgs são referências a commits específicos.
+
+`**-l | --list**` Lista todas tags. Pode ser seguida por uma padrão de busca.  
 `**-i | --ignore-case**` Ignora capitulação dos nomes das tags.
 
 ```shell
