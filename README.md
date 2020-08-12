@@ -133,6 +133,24 @@ $ git checkout [-b] <nome_branch>
 
 ---
 
+#### TAG
+O comando TAG permite realizar ações relacionadas as tAGs criadas. TAgs são referências a commits específicos. 
+>**[-l | --list]** lista todas tags. Pode ser seguida por uma padrão de busca. 
+>**[-i | --ignore-case]** ignora capitulação dos nomes das tags
+
+```shell
+git tag -li <"*tag_pattern*">
+```
+
+>**[fetch --tags]** atualização de TAGs locais com base em tags remotas
+>**[--f]** Força atualização das TAGs
+>**[--prune-tags]** irá remover tags locais que não existam no remote
+```shell
+git fetch --tags <--prune-tags> -f
+```
+
+---
+
 #### Merge
 O comando merge combina (faz a "junção") de duas branchs. 
 
