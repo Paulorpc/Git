@@ -5,7 +5,7 @@ Este projeto não possui nenhum conteúdo relevante além deste readme, já que 
 
 Neste arquivo é apresentado os principais comandos do git, suas descrições, opções e exemplos.  
 
-#### Comandos Git básicos:
+#### Comandos Git mais frequêntes:
 
 ```shell
 $ git init
@@ -16,6 +16,9 @@ $ git status
 $ git add .
 $ git commit -m 'comentário'
 $ git push origin <nome_branch>
+$ git branch -r | grep -i <branchname_pattern>
+$ git tag -li <"*tagname_pattern*">
+$ git fetch --tags -f
 ```
 
 ---
@@ -108,14 +111,15 @@ $ git config --global credential.helper 'store'
 #### Branch
 O comando branch permite realizar uma série de tarefas com as branchs, como: criar, remover, listar, etc.
 
-**Observação:** o comando git branch (sem comandos opcionais) lista as branchs locais. A branch selecionada sempre fica em destaque.
+**Observação:** o comando git branch (sem comandos opcionais) lista as branchs locais. A branch selecionada sempre fica em destaque. É possível usar os comandos bash como `grep` para filtrar o retorno. 
 
 >**[-a]** lista todas as branchs (locais e remotas).  
 **[-r]** lista todas as branchs remotas.  
 **[nova_branch]** cria uma nova branch.
 
 ```shell
-$ git branch
+$ git branch [-a | -r]
+$ git branch -r | grep -i <branchname_pattern>
 ```
 
 ---
@@ -134,20 +138,17 @@ $ git checkout [-b] <nome_branch>
 ---
 
 #### Tag
-O comando TAG permite realizar ações relacionadas as tAGs. TAgs são referências a commits específicos.
+O comando TAG permite realizar ações relacionadas as TAGs. TAGs são referências a commits específicos.
 
-**`-l | --list`** Lista todas tags. Pode ser seguida por uma padrão de busca.  
-**`-i | --ignore-case`** Ignora capitulação dos nomes das tags.
+>**[-l]** Lista todas tags. Pode ser seguida por uma padrão de busca [-l <"\*tagname_pattern\*">].  
+**[-i]** Ignora capitulação dos nomes das tags.  
 
+>**[fetch --tags]** atualização de TAGs locais com base em tags remotas  
+**[--f]** Força atualização das TAGs  
+**[--prune-tags]** irá remover tags locais que não existam no remote  
 ```shell
-git tag -li <"*tag_pattern*">
-```
-
-**`fetch --tags`** atualização de TAGs locais com base em tags remotas  
-**`--f`** Força atualização das TAGs  
-**`--prune-tags`** irá remover tags locais que não existam no remote  
-```shell
-git fetch --tags <--prune-tags> -f
+git tag -li <"*tagname_pattern*">
+git fetch --tags --prune-tags -f
 ```
 
 ---
