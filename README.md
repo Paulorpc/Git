@@ -21,6 +21,14 @@ $ git fetch --tags -f
 $ git fetch --all --prune
 ```
 
+#### Nomenclatura Úteis (git/gitflow)
+- Develop: última versão instável
+- Master: ultima versão estável
+- Tag: snapshot de uma versão
+- Hotfix: branch temporária para corrigir algum problema numa versão
+- Release: branch temporária para preparar uma nova versão
+- Feature: branch temporária para um novo desenvolvimento
+
 ---
 
 #### Init
